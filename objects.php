@@ -26,15 +26,16 @@ Class ChildrenFilesFolder {
     }
 
     public function getFiles () {
-
         return $this->list_files;
-        // return json_encode($this->list_files, JSON_PRETTY_PRINT);
-
     }
 
     /* public function getFolders() {
         return $this->list_folders;
-    } */
+	} */
+	
+	// public function getData() {
+	// 	return json_encode($this->data, JSON_PRETTY_PRINT);
+    // }
 
 
 	public function get($ord=NULL){ // Orden: 0 asc - 1 desc (NULL = default asc)
@@ -71,3 +72,6 @@ Class ChildrenFilesFolder {
 /*-----------------------------------------------------------------*/
 # END Class
 /*-----------------------------------------------------------------*/
+
+define("DS", DIRECTORY_SEPARATOR);
+define("ROOT", realpath(dirname(__FILE__)) .DS); // Ubicación fisica del directorio raiz
