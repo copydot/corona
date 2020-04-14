@@ -1,0 +1,45 @@
+- var url_home = 'http://coronavirus.riocuarto.gov.ar/';
+- var url_comite = 'comite.html';
+- var url_donaciones = 'donaciones.html';
+- var url_ideas = 'ideas.html';
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coronavirus - Comité Social Permanente de Río Cuarto</title>
+    //- <base href="http://coronavirus.riocuarto.gov.ar/">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="assets/css/app.critical.css"> -->
+    <link rel="stylesheet" href="assets/css/app.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <head>
+
+    </head>
+    <body>
+        include nav.pug
+        <section class="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        block content
+                    </div>        
+                    <div class="col-md-4">
+                        include aside.pug
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <footer>
+            <div class="container">footer</div>
+        </footer>  
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+        <script src="http://coronavirus.riocuarto.gov.ar/assets/js/datos-oficiales.js"></script>
+        <script src="http://coronavirus.riocuarto.gov.ar/assets/js/estadisticas0800.js"></script>
+        <script src="http://coronavirus.riocuarto.gov.ar/assets/js/estadisticas0800-consultas.js"></script>
+        <script src="http://coronavirus.riocuarto.gov.ar/assets/js/app.min.js"></script>
+    </body>
+</html>

@@ -12,5 +12,5 @@ RewriteEngine On
 #Si se trata de un archivo existente
 RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} !^public/
-RewriteRule ^(.*)$ public/$1
+RewriteCond %{REQUEST_URI} !^html/
+RewriteRule ^(.*)$ html/$1
