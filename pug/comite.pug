@@ -1,15 +1,51 @@
 extends includes/layout.pug
 block content
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb bg-light">
-            <li class="breadcrumb-item">
-                a(href= url_home) Home
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">Comité Social Permanente</li>
-        </ol>
-    </nav>
-    sec
-    <h1>Comité Social Permanente de Río Cuarto</h1>
-    <h4>Para asistir en la emergencia sanitaria del Coronavirus (COVID-19)</h4>
-    <br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ducimus mollitia corporis ad molestias facilis modi, rerum, libero at eius velit dolor voluptates inventore sint quis assumenda voluptatem labore quibusdam?</p>   
+    <div class="comite">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-light">
+                <li class="breadcrumb-item">
+                    a(href= url_home) Home
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Comité Social Permanente</li>
+            </ol>
+        </nav>
+        <h1 class="h2 mt-5">Comité Social Permanente de Río Cuarto</h1>
+        <br>
+        <p class="">En el marco de Pandemia declarada por la Organización Mundial de la Salud (OMS) con relación al Coronavirus COVID-19 y la emergencia pública sanitaria, quedó constituido el <strong>Comité Social Permanente, </strong> destinado a reforzar la asistencia alimentaria y sanitaria, y articular acciones destinadas a cubrir necesidades de los sectores más vulnerables de la ciudad de Río Cuarto.</p>
+        <p>El mismo se encuentra conformado por el Municipio junto a empresas y organizaciones de la Ciudad, además de las instituciones que forman parte del Consejo Económico y Social.</p>
+        <br>
+        <section class="row">
+            <div class="text-center offset-sm-1 col-sm-10 offset-md-0 col-md-6 col-lg-5">
+                <div class="card text-center card_actions">
+                    <div class="card-body">
+                        <div class="bg-light icon">
+                            <i class="far fa-heart fa-6x mb-4"></i>
+                        </div>
+                        <br>
+                        <div class="d-flex align-items-center copy">
+                            <p >¿Querés donar <strong>insumos</strong> o <strong>recursos</strong>?</br>¿Podés brindar algún servicio que sea de utilidad durante la pandemia?</p>
+                        </div>
+                    </div>
+                    <div class="bg-light card-body border-top">
+                        a(href= url_donaciones) <button class="btn btn-covid">Haz una donación</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center offset-sm-1 col-sm-10 offset-md-0 col-md-6 offset-lg-1 col-lg-5">
+                <div class="card text-center card_actions">
+                    <div class="card-body">
+                        <div class="bg-light icon">
+                            <i class="far fa-lightbulb fa-6x"></i>
+                        </div>
+                        <br>
+                        <div class="d-flex align-items-center copy">
+                            <p>¿Tenés <strong>ideas</strong>, <strong>sugerencias</strong>,  o <strong>alternativas</strong> que sean de utilidad para nuestra comunidad durante la emergencia?</p>
+                        </div>
+                    </div>
+                    <div class="bg-light card-body border-top">
+                        a(href= url_ideas) <button class="btn btn-covid">Comparte una idea</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>

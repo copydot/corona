@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# protege archivo .htaccess
+<files .htaccess>
+	order allow,deny
+	deny from all
+</files>
+
+# Condición: si no hace referencia a una carpeta que existe en el servidor
+RewriteCond %{REQUEST_FILENAME} !-d 
+# Condición: si no hace referencia a un archivo que existe en el servidor.
+RewriteCond %{REQUEST_FILENAME} !-f 
+# Condición si no hace referencia a un enlace simbolico. similar a acceso directo
+RewriteCond %{REQUEST_FILENAME} !-l 
+
+RewriteRule ^ index.html [QSA,L]
