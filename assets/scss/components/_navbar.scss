@@ -1,0 +1,34 @@
+.navbar{
+  padding: {
+    top: 28px;
+    bottom: 28px;
+  };
+  .navbar-brand{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .navbar-collapse{}
+  .navbar-nav{}
+  .nav-item{
+    margin-left: 16px;
+  }
+  .nav-link{
+    text-transform: uppercase;
+  }
+  .grc{
+    height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar{
+    padding: {
+      top: 12px;
+      bottom: 12px;
+    };
+    .nav-item{
+      margin-left: 0px;
+    }
+  }
+}

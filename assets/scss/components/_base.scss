@@ -1,0 +1,18 @@
+html{
+  position: relative;
+  min-height: 100vh;
+}
+body{
+  margin-bottom: 140px;
+}
+
+.card{
+  background-color: #eee;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  .card-body{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

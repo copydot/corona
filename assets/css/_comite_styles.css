@@ -1,0 +1,10 @@
+.comite {
+  background-color: red; }
+  .comite row .card .icon {
+    width: 10em;
+    height: 10em;
+    line-height: 14em;
+    margin: 0 auto;
+    border-radius: 100%; }
+    .comite row .card .icon i {
+      color: steelblue; }
