@@ -1,6 +1,8 @@
 extends includes/layout.pug
+block styles
+    <link rel="stylesheet" href="assets/css/comite.css">
 block content
-    <div class="comite">
+    <section class="comite">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-light">
                 <li class="breadcrumb-item">
@@ -9,12 +11,13 @@ block content
                 <li class="breadcrumb-item active" aria-current="page">Comité Social Permanente</li>
             </ol>
         </nav>
-        <h1 class="h2 mt-5">Comité Social Permanente de Río Cuarto</h1>
+        <br>
+        <h1 class="h2">Comité Social Permanente de Río Cuarto</h1>
         <br>
         <p class="">En el marco de Pandemia declarada por la Organización Mundial de la Salud (OMS) con relación al Coronavirus COVID-19 y la emergencia pública sanitaria, quedó constituido el <strong>Comité Social Permanente, </strong> destinado a reforzar la asistencia alimentaria y sanitaria, y articular acciones destinadas a cubrir necesidades de los sectores más vulnerables de la ciudad de Río Cuarto.</p>
         <p>El mismo se encuentra conformado por el Municipio junto a empresas y organizaciones de la Ciudad, además de las instituciones que forman parte del Consejo Económico y Social.</p>
         <br>
-        <section class="row">
+        <div class="row">
             <div class="text-center offset-sm-1 col-sm-10 offset-md-0 col-md-6 col-lg-5">
                 <div class="card text-center card_actions">
                     <div class="card-body">
@@ -47,5 +50,5 @@ block content
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>

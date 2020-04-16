@@ -1,0 +1,123 @@
+extends includes/layout.pug
+block content
+    <div class="preguntas-frecuentes">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-light">
+                <li class="breadcrumb-item">
+                    a(href= url_home) Home
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Consultas frecuentes</li>
+            </ol>
+        </nav>
+        <br>
+        <h2 class="h2">Consultas Frecuentes</h2>
+        <h4 id="indice" class="mb-4">Indice</h4>
+        <ul class="preguntas">
+            <li><a class="btn-scroll" href="#violencia">Mujeres en situación de violencia</a></li>
+            <li><a class="btn-scroll" href="#aislamiento">Incumplimiento de cuarentena o aislamiento</a></li>
+            <li><a class="btn-scroll" href="#laborales">Denuncias o consultas laborales</a></li>
+            <li><a class="btn-scroll" href="#comercios">Denuncias por comercios abiertos</a></li>
+            <li><a class="btn-scroll" href="#sobreprecios">Denuncias por sobreprecios</a></li>
+            <li><a class="btn-scroll" href="#asistencia">Pedido de asistencia social</a></li>
+            <li><a class="btn-scroll" href="#familiares-arribados">Permiso para buscar familiares arribados en vuelos</a></li>
+            <li><a class="btn-scroll" href="#actividad-agropecuaria">Actividad agropecuaria: permiso para circular</a></li>
+            <li><a class="btn-scroll" href="#cuidado-personas-mayores">Excepción para cuidado de personas mayores</a></li>
+        </ul>
+        <h4>Respuestas</h4>
+        <div class="respuestas">
+
+            <div id="violencia" class="respuestas-item">
+                <h5 class="h4">Mujeres en situación de violencia</h4>
+                <p>Cumplí con las medidas preventivas pero no te alejes de tus vínculos y redes de confianza.</p>
+                <div class="alert alert-secondary pb-1" role="alert">
+                    <p class="font-italic">Si estás en situación de violencia, llamá al:</p>
+                    <h5 class="h4">0800 888 9898</h5>
+                    <p class="font-italic">Para consultas, acompañamiento profesional, o realizar una denuncia.</p>
+                </div>
+                <a href="#indice" class="btn btn-secondary btn-sm mt-2 btn-scroll">Volver al índice</a>
+            </div>
+
+            <div id="aislamiento" class="respuestas-item">
+                <h5 class="h4">Incumplimiento de cuarentena o aislamiento</h4>
+                <p>Para denunciar a quienes violen la cuarentena.</p>
+                <div class="alert alert-secondary pb-1" role="alert">
+                    <p class="font-italic">Llame al Sistema único de atención al vecino:</p>
+                    <h5 class="h4">0800 888 5454</h5>
+                </div>
+                <a href="#indice" class="btn btn-secondary btn-sm mt-2 btn-scroll">Volver al índice</a>
+            </div>
+
+            <div id="laborales" class="respuestas-item">
+                <h5 class="h4">Denuncias o consultas laborales</h5>
+                <p>En caso de que usted quiera efectuar una consulta o denuncia sobre un empleador que no esté cumpliendo con las obligaciones sanitarias vinculadas a la pandemia (Coronavirus)</p>
+                <div class="alert alert-secondary pb-1" role="alert">
+                    <p class="font-italic">Llame al Sistema único de atención al vecino:</p>
+                    <h5 class="h4">0800 888 5454</h5>
+                </div>
+                <a href="#indice" class="btn btn-secondary btn-sm mt-2 btn-scroll">Volver al índice</a>
+            </div>
+
+            <div id="comercios" class="respuestas-item">
+                <h5 class="h4">Denuncias por comercios abiertos</h5>
+                <p>Comercios que permanecen abiertos durante la cuarentena, cuyos rubros no estén contemplados en las excepciones establecidas en el <a class="alert-link" target="_blank" href="https://www.boletinoficial.gob.ar/detalleAviso/primera/227042/20200320">DNU del aislamiento social preventivo obligatorio</a> (Artículo 6 del Decreto 297/2020)</p>
+                <div class="alert alert-secondary pb-1" role="alert">
+                    <p class="font-italic">Llame al Sistema único de atención al vecino:</p>
+                    <h5 class="h4 text-center">0800 888 5454</h5>
+                </div>
+                <a href="#indice" class="btn btn-secondary btn-sm mt-2 btn-scroll">Volver al índice</a>
+            </div>
+
+            <div id="sobreprecios" class="respuestas-item">
+                <h5 class="h4">Denuncias por sobreprecios</h5>
+                <p>Puede consultar la referencia del sitio oficial, con los 200 productos con precios máximos: <a class="alert-link" href="https://preciosmaximos.argentina.gob.ar/" target="_blank">preciosmaximos.argentina.gob.ar</a><span class="font-weight-bold"> (seleccionar Córdoba)</span></p>
+                <div class="alert alert-secondary pb-1" role="alert">
+                    <p class="font-italic">Para efectuar denuncias, llame al Sistema único de atención al vecino:</p>
+                    <h5 class="h4">0800 888 5454</h5>
+                </div>
+                <a href="#indice" class="btn btn-secondary btn-sm mt-2 btn-scroll">Volver al índice</a>
+            </div>
+
+            <div id="asistencia" class="respuestas-item">
+                <h5 class="h4">Pedido de asistencia social</h5>
+                <p style="color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At similique, dicta incidunt, esse sed ex, unde, repellat nihil nisi animi fugit molestias. Cumque, qui voluptas quae nam autem pariatur facere.</p>
+                <div class="alert alert-secondary pb-1" role="alert">
+                    <p class="font-italic">Para solicitar asistencia, llame al Sistema único de atención al vecino:</p>
+                    <h5 class="h4">0800 888 5454</h5>
+                </div>
+                <a href="#indice" class="btn btn-secondary btn-sm mt-2 btn-scroll">Volver al índice</a>
+            </div>
+
+            <div id="familiares-arribados" class="respuestas-item">
+                <h5 class="h4">Permiso para buscar familiares arribados en vuelos internacionales, o búsqueda mediante taxi o remisse.</h5>
+                <p>Se debe gestionar y completar una declaración jurada en <a class='alert-link' target='_blank' href="https://tramitesadistancia.gob.ar">tramitesadistancia.gob.ar</a></br>Ingresá la palabra <span class="font-italic">aeropuerto</span> en el buscador y luego seleccioná <span class="font-italic">Solicitud de acceso de vehículos a aeropuertos para retirar pasajeros</span></p>
+                <p style="color: red;">Cuando no haya posibilidad de ir a buscarlos, el Municipio acordó con las entidades de Taxis y Remises...</p>
+                <div class="alert alert-secondary pb-1" role="alert">
+                    <p class="font-italic">Ingrese al link de trámites a distancia de la Presidencia de la Nación:</p>
+                    <a class="alert-link" target="_blank" href="https://tramitesadistancia.gob.ar"><h5 class="h4">tramitesadistancia.gob.ar</h5></a>
+                </div>
+                <a href="#indice" class="btn btn-secondary btn-sm mt-2 btn-scroll">Volver al índice</a>
+            </div>
+
+            <div id="actividad-agropecuaria" class="respuestas-item">
+                <h5 class="h4">Actividad agropecuaria: permiso para circular.</h5>
+                <p>El Ministerio de Agricultura y Ganadería de la Provincia puso a disposición de los productores agropecuarios una Declaración Jurada vía web para que los mismos puedan circular por el territorio provincial y realizar de esta manera sus actividades.</p>
+                
+                <div class="alert alert-secondary pb-1" role="alert">
+                    <p class="font-italic">Ingrese al portal del Ministerio de Agricultura y Ganadería de la Provincia de Córdoba y <span class="font-weight-bold">haga click en banner declaración jurada</span></p>
+                    <a class="alert-link" target="_blank" href="https://agricultura.cba.gov.ar/ "><h5 class="h4">agricultura.cba.gov.ar</h5></a>
+                </div>
+                <a href="#indice" class="btn btn-secondary btn-sm mt-2 btn-scroll">Volver al índice</a>
+            </div>
+
+            <div id="cuidado-personas-mayores" class="respuestas-item">
+                <h5 class="h4">Excepción para cuidado de personas mayores.</h5>
+                <p>Las tareas de cuidado de los adultos mayores son una de las excepciones autorizadas por el <a class="alert-link" target="_blank" href="https://www.boletinoficial.gob.ar/detalleAviso/primera/227042/20200320">DNU del aislamiento social preventivo obligatorio</a> (Artículo 6 inciso 5 del Decreto 297/2020)</br>Quienes ejercen ese rol deberán circular con una declaración jurada elaborada por el Ministerio de Desarrollo Social.</p>
+                <div class="alert alert-secondary pb-1" role="alert">
+                    <p class="font-italic">Ingrese al siguiente link para obtener una copia de la declaración jurada:</p>
+                    <a class="alert-link" target="_blank" href="https://www.argentina.gob.ar/sites/default/files/6056_-_ddjj_para_resp_de_adultos_mayores.pdf"><h5 class="h4">Link a Declaración Jurada</h5></a>
+                </div>
+                <a href="#indice" class="btn btn-secondary btn-sm mt-2 btn-scroll">Volver al índice</a>
+            </div>
+
+        </div>
+    </div>

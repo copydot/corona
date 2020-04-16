@@ -8303,17 +8303,17 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-.comite section .card_actions .icon {
+.comite .card_actions .icon {
   width: 9em;
   height: 9em;
   line-height: 13em;
   margin: 0 auto;
   border-radius: 100%;
   border: 1px solid #d5effa; }
-  .comite section .card_actions .icon i {
+  .comite .card_actions .icon i {
     color: #158bbb; }
 
-.comite section .card_actions .copy {
+.comite .card_actions .copy {
   min-height: 8.5rem; }
 
 .comite .btn-covid {

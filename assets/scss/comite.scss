@@ -4,22 +4,20 @@
 
 @import "./custom";
 .comite {
-    section {
-        .card_actions {
-            .icon {
-                width: 9em; 
-                height: 9em; 
-                line-height: 13em; 
-                margin: 0 auto;
-                border-radius: 100%;
-                border: 1px solid lighten($covid, 40%);
-                i {
-                    color: darken($covid, 10%);
-                }
+    .card_actions {
+        .icon {
+            width: 9em; 
+            height: 9em; 
+            line-height: 13em; 
+            margin: 0 auto;
+            border-radius: 100%;
+            border: 1px solid lighten($covid, 40%);
+            i {
+                color: darken($covid, 10%);
             }
-            .copy {
-                min-height: 8.5rem;
-            }
+        }
+        .copy {
+            min-height: 8.5rem;
         }
     }
 
