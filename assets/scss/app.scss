@@ -1,4 +1,4 @@
-// Include Bootstrap to project
+// Bootstrap added to project
 // Doc: https://getbootstrap.com/docs/4.4/getting-started/theming/
 
 // Custom bootstrap styles
@@ -6,11 +6,16 @@
 @import "./custom";
 
 // Bootstrap and its default variables
-// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Personals styles
 //
-
 @import './components/base';
 @import './components/navbar';
 @import './components/footer';
+@import './components/card';
+@import './components/charts';
+@import './components/questions';
+@import './components/stadistics';
+@import './components/cta';
+@import './components/comite';

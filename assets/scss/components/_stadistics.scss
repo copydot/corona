@@ -1,0 +1,57 @@
+.estadisticas{
+  //background-color: yellow;
+  .header{
+    //background-color: red;
+    text-align: center;
+    margin-bottom: 40px;
+    h2{
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+  }
+
+  article{
+    margin-bottom: 60px;
+    h4{
+      text-align: center;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      color: $covid;
+    }
+    .card{
+      //background-color: orange;
+      .card-body{
+        text-align: center;
+        .value{
+          //color: $covid;
+          font-size: 2rem;
+          font-weight: bold;
+
+          &.total{
+            color: $covid;
+          }
+          &.fallecido{
+            color: $danger;
+          }
+          &.alta{
+            color: $success;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .estadisticas{
+    article{
+      .card{
+        .card-header{
+          // background-color: orange;
+          // display: block;
+          // text-align: center;
+        }
+      }
+    }
+  }
+}

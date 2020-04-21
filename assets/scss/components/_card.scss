@@ -1,0 +1,107 @@
+.card{
+  margin-bottom: 40px;
+  border-color: $gray-300;
+  .card-header{
+    background-color: white;
+    padding-top: 16px;
+    font-weight: 600;
+    background-color: $gray-200;
+    color: $gray-700;
+    letter-spacing: 0.02rem;
+    text-transform: uppercase;
+    border: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ion-icon{
+      color: $covid;
+      font-size: 1.3rem;
+    }
+
+    &.inverted{
+      background-color: $covid;
+      color: white;
+      ion-icon{
+        color: white;
+      }
+    }
+  }
+  .card-body{
+    //background-color: rgba(red, 0.1);
+  }
+  .card-title{
+    color: red;
+  }
+  .card-text{
+    color: orange;
+  }
+  .card-footer{
+    //background-color: blue;
+    font-size: 0.8rem;
+    background-color: white;
+    border-color: $gray-200;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &.phone-0800{
+    background-color: $covid;
+    color: white;
+    // border: 1px solid $covid;
+    // color: $gray-600;
+    // background-color: #fff;
+    .card-body{
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-size: 1.3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      //color: $covid;
+      a{
+        font-weight: 600;
+        color: white;
+        font-size: 1.7rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+
+  &.informes{
+    .card-text{
+      margin-bottom: 8px;
+    }
+  }
+  &.datos-oficiales{
+    h2{
+      font-weight: 600;
+    }
+    small{
+      font-size: 0.7rem;
+    }
+  }
+}
+
+@media (max-width: 767px){
+  .card{
+    .card-header{
+      ion-icon{
+        margin-left: 30px;
+      }
+    }
+    &.phone-0800{
+      .card-body{
+        text-align: center;
+        font-size: 1rem;
+        flex-direction: column;
+        a{
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}

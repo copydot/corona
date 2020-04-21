@@ -6,13 +6,43 @@ body{
   margin-bottom: 140px;
 }
 
-.card{
-  background-color: #eee;
-  text-align: center;
+a{}
+
+h2{
   margin-bottom: 30px;
-  text-transform: uppercase;
-  .card-body{
-    padding-top: 40px;
-    padding-bottom: 40px;
+}
+
+.card.informes-diarios{
+  margin-bottom: 12px;
+  a{
+    padding: 8px 16px;
+    font-size: 1.1rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    ion-icon{
+      font-size: 1.4rem;
+    }
+    &:hover{
+      background-color: rgba($covid, 0.1);
+    }
+  }
+}
+
+.data-0800{
+  iframe{
+    width: 100%;
+    height: 270px;
+  }
+}
+
+@media (max-width: 767px) {
+  .data-0800{
+    iframe{
+      width: 100%;
+      height: 140px;
+    }
   }
 }

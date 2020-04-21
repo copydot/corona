@@ -5,3 +5,5 @@ $font-family-sans-serif: 'Open Sans', sans-serif;
 $theme-colors: (
   "covid": $covid
 );
+
+$link-color: darken($covid, 10%);
